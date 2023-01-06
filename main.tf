@@ -10,7 +10,6 @@ resource "aws_sns_topic" "main" {
   delivery_policy = var.delivery_policy_file_path == null? null:file(var.delivery_policy_file_path)
   kms_master_key_id = var.kms_master_key_id
   tags = merge(
-  var.common_tags,
   var.additional_tags,
    tomap({
       "Name"        = local.sns_topic_name
