@@ -35,12 +35,12 @@ variable description {
 
 variable naming_prefix_upper {}
 
-variable common_tags {}
+/* variable common_tags {}
 variable additional_tags {
   description = "Mention additional tags if any."
   type = map
   default = {}
-}
+} */
 
 variable function {
   description = "Function/scope of the SNS topic. This value will be used to form the Name tag. Example: WANV-SHS-9-SNS-<function>-001"
