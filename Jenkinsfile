@@ -33,14 +33,7 @@ stage ('Terraform init') {
    }
    }
    
- stage ('Terraform apply') { 
-  steps {
-   sh '''
-   cd examples/basic-configuration
-   terraform apply --auto-approve
-   ''' 
-   }
-     } 
+ 
      }
      post { 
         always { 
